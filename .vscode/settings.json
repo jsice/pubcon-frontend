@@ -1,0 +1,9 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "html.format.endWithNewline": true,
+  "prettier.trailingComma": "es5",
+  "files.trimTrailingWhitespace": true,
+  "html.format.wrapLineLength": 80,
+  "editor.rulers": [80, 120]
+}
