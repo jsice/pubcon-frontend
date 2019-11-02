@@ -1,6 +1,6 @@
-import * as firebase from 'firebase';
-import config from './firebaseConfig';
+import * as firebase from "firebase"
+import config from "./firebaseConfig"
 
-const firebaseApp =  firebase.initializeApp(config);
+const firebaseApp = firebase.initializeApp(config)
 
-export default firebaseApp;
+export default firebaseApp

@@ -1,4 +1,17 @@
-import React from 'react'
-const LoginButton = props => <div> <button onClick={props.onClick()}>{ props.status?<span>Signout</span>:<span>Signin with Google</span>}</button></div>;
+import React from "react"
+import PropTypes from "prop-types"
+
+const LoginButton = ({ status, onClick }) => (
+  <div>
+    <button onClick={onClick}>
+      {status ? <span>Signout</span> : <span>Signin with Google</span>}
+    </button>
+  </div>
+)
+
+LoginButton.propTypes = {
+  status: PropTypes.string,
+  onClick: PropTypes.func,
+}
 
 export default LoginButton
