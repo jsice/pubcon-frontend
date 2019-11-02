@@ -1,15 +1,26 @@
-import React, { Fragment } from "react"
+import React from "react"
 import ReactDOM from "react-dom"
+import { Provider } from "react-redux"
+import { ConnectedRouter } from "connected-react-router"
 import Router from "./containers/Router"
 import * as serviceWorker from "./serviceWorker"
-import GlobalStyle from "./style"
+import GlobalStyle from "./globalStyle"
+import configureStore from "./configureStore"
+import history from "./utils/history"
+
+// Create redux store with history
+const initialState = {}
+const store = configureStore(initialState, history)
+const MOUNT_NODE = document.getElementById("root")
 
 ReactDOM.render(
-  <Fragment>
-    <Router />
+  <Provider store={store}>
     <GlobalStyle />
-  </Fragment>,
-  document.getElementById("root")
+    <ConnectedRouter history={history}>
+      <Router />
+    </ConnectedRouter>
+  </Provider>,
+  MOUNT_NODE
 )
 
 // If you want your app to work offline and load faster, you can change
