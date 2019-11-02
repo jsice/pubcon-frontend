@@ -10,7 +10,8 @@
     "react-router-dom": "^5.1.2",
     "redux": "^4.0.4",
     "redux-saga": "^1.1.1",
-    "styled-components": "^4.4.1"
+    "styled-components": "^4.4.1",
+    "antd": "^3.24.3"
   },
   "scripts": {
     "start": "node scripts/start.js",
