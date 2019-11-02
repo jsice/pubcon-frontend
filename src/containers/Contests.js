@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react"
 
-const Contests = props => <h1>Contests</h1>
+const Contests = () => <h1>Contests</h1>
 export default Contests

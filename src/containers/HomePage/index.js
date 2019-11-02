@@ -6,10 +6,12 @@ import {
   HomePageLink,
   HomePageLogo,
 } from "../../components/HomePage"
+import Home from "../Home"
 
 const HomePage = () => (
   <HomePageWrapper>
     <HomePageHeader>
+      <Home />
       <HomePageLogo src={logo} alt="logo" />
       <p>
         Edit <code>src/containers/HomePage</code> and save to reload.
