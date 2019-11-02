@@ -4,7 +4,7 @@ import {
   HomePageWrapper,
   HomePageHeader,
   HomePageLink,
-  HomePageLogo
+  HomePageLogo,
 } from "../../components/HomePage"
 
 const HomePage = () => (
