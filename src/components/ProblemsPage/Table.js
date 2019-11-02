@@ -16,7 +16,7 @@ class Table extends Component {
           users_tot: 1428,
           users_acc: 712,
           users_rat: 50,
-          difficulty: 6.9
+          difficulty: 6.9,
         },
         {
           id: 2,
@@ -28,7 +28,7 @@ class Table extends Component {
           users_tot: 2530,
           users_acc: 1763,
           users_rat: 70,
-          difficulty: 4.5
+          difficulty: 4.5,
         },
         {
           id: 3,
@@ -40,7 +40,7 @@ class Table extends Component {
           users_tot: 3271,
           users_acc: 2784,
           users_rat: 85,
-          difficulty: 2.5
+          difficulty: 2.5,
         },
         {
           id: 4,
@@ -52,7 +52,7 @@ class Table extends Component {
           users_tot: 3503,
           users_acc: 3137,
           users_rat: 90,
-          difficulty: 2.1
+          difficulty: 2.1,
         },
         {
           id: 5,
@@ -64,21 +64,24 @@ class Table extends Component {
           users_tot: 245,
           users_acc: 94,
           users_rat: 38,
-          difficulty: 8.5
-        }
-      ]
+          difficulty: 8.5,
+        },
+      ],
     }
   }
+
   handleClick = (msg) => (e) => {
     e.preventDefault()
     alert(msg)
   }
+
   renderTableHeader() {
     let header = Object.keys(this.state.problems[0])
     return header.map((key, index) => {
       return <th key={index}>{key.toUpperCase()}</th>
     })
   }
+
   renderTableData() {
     return this.state.problems.map((problem) => {
       const id = problem.id
@@ -98,6 +101,7 @@ class Table extends Component {
       )
     })
   }
+
   render() {
     return (
       <div>
