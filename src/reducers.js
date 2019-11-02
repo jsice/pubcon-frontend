@@ -13,7 +13,7 @@ import history from "./utils/history"
 export default function createReducer(injectedReducers = {}) {
   const rootReducer = combineReducers({
     router: connectRouter(history),
-    ...injectedReducers
+    ...injectedReducers,
   })
 
   return rootReducer
