@@ -20,7 +20,7 @@ ReactDOM.render(
       <Router />
     </ConnectedRouter>
   </Provider>,
-  MOUNT_NODE
+  MOUNT_NODE,
 )
 
 // If you want your app to work offline and load faster, you can change
