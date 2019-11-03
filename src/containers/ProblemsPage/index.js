@@ -7,7 +7,7 @@ const ProblemsPage = () => (
       <h1>Problems</h1>
     </div>
     <div>
-      <Table />
+      <Table header={["id", "name", "time_limit", "author"]} />
     </div>
   </section>
 )

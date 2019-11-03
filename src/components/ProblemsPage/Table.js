@@ -4,7 +4,7 @@ class Table extends Component {
   constructor(props) {
     super(props) // since we are extending class Table so we have to use super in order to override Component class constructor
     this.state = {
-      // mockup data for table
+      // mockup data for table, waiting for api
       problems: [
         {
           id: 1,
@@ -47,8 +47,7 @@ class Table extends Component {
   }
 
   renderTableHeader() {
-    const { problems } = this.state
-    const header = Object.keys(problems[0])
+    const { header } = this.props
     return header.map((key) => <th>{key.toUpperCase()}</th>)
   }
 
